@@ -29,3 +29,4 @@ Skill.create(name: 'teaching',  skillable_id: rand(1..2) , skillable_type: ['Use
 Cause.create(name: 'literacy',  causable_id: 2 , causable_type: ['Organization'].sample)
 Cause.create(name: 'youth',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
 Cause.create(name: 'poverty',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
+
