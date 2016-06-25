@@ -5,8 +5,9 @@ class Event < ActiveRecord::Base
   has_many :skills, :as => :skillable
   has_many :causes, :as => :causable
 
-  validates_presence_of :name, :zip
+  validates_presence_of :name, :zip, :start_date
   
+
 
 
 end
