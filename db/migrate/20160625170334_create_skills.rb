@@ -4,6 +4,7 @@ class CreateSkills < ActiveRecord::Migration
       t.string :name
       t.references :skillable, polymorphic: true, index: true
       t.string :skillable_type
+      t.string :image_url
 
       t.timestamps null: false
     end
