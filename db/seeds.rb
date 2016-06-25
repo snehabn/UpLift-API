@@ -12,3 +12,20 @@ Organization.create(name: "Youth Speaks", email: "info@youthspeaks.org", zip: 94
 Event.create(name: "Blood Drive", start_date: "2016-07-15", end_date: "2016-07-18", organization_id: 1, street: "140 Gregory Ln #120", city: "Pleasant Hill", state: "CA", zip: 94523, volunteers_needed: 50)
 
 Event.create(name: "Youth Poetry Slam", start_date: "2016-07-12", end_date: "2016-07-16", organization_id: 2, street: "1663 Mission St.", city: "San Francisco", state: "CA", zip: 94103, volunteers_needed: 200)
+
+User.create(first_name: 'Tim', last_name: 'Tim', email: "tim@tim.com", password_digest: 'timtim', zip: '94107', image_url: 'http://devbootcamp.com/assets/img/locations/sf/hunter-chapman.jpg')
+User.create(first_name: 'Tom', last_name: 'Tom', email: "tom@tom.com", password_digest: 'tomtom', zip: '94107', image_url: 'https://avatars2.githubusercontent.com/u/8047928?v=3&s=460')
+
+EventsUser.create(user_id: 1, event_id: 1)
+EventsUser.create(user_id: 1, event_id: 2)
+EventsUser.create(user_id: 2, event_id: 1)
+EventsUser.create(user_id: 2, event_id: 2)
+
+Skill.create(name: 'programming', skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
+Skill.create(name: 'business development', skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
+Skill.create(name: 'gardening',  skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
+Skill.create(name: 'teaching',  skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
+
+Cause.create(name: 'literacy',  causable_id: 2 , causable_type: ['Organization'].sample)
+Cause.create(name: 'youth',  causable_id: rand(1..2) , causable_type: ['Organization'].sample))
+Cause.create(name: 'poverty',  causable_id: rand(1..2) , causable_type: ['Organization'].sample))
