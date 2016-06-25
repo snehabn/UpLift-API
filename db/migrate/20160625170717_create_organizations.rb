@@ -7,9 +7,8 @@ class CreateOrganizations < ActiveRecord::Migration
       t.string :mission_statement
       t.string :phone_number
       t.string :website_url
-      t.string :password
-      t.boolean :nonprofit
-      t.string :token
+      t.string :password_digest
+      t.string :image_url
 
       t.timestamps null: false
     end
