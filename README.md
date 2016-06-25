@@ -21,7 +21,8 @@
  * View testimonies/saving money/etc from the organizations.
  * View other Users who are joining/participating the event.
  * Contact organizations so that I can inquire further.
- * Invite my friends to join me. 
+ * Invite my friends to join me.
+  
 ##### As an Organization I can: 
 * Have my own profile page listing volunteerings, members, followers, copy, etc.
 ### Technology Stack
