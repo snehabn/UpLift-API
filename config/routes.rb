@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :users
   resources :organizations
   resources :skills
+
+  root 'users#index'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
