@@ -20,6 +20,7 @@ class EventsController < ApplicationController
 
 	def show
 		organization = Event.find_by(id: params[:id]).organization.name
+		
 		event = Event.find_by(id: params[:id])
 		render json: {
 			event: event,
