@@ -16,7 +16,8 @@ class OrganizationsController < ApplicationController
 	def show
 		organization = Organization.find_by(id: params[:id])
 		causes = Cause.where(causable_id: params[:id], causable_type: 'Organization')
-		render json: {organization: organization, causes: causes}
+		events = Event.where(organization_id: params[:id])
+		render json: {organization: organization, causes: causes, events: events}
 	end
 
 
