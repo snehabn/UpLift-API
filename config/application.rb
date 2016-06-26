@@ -34,10 +34,10 @@ module Uplift
 
     config.active_record.raise_in_transactional_callbacks = true
     config.api_only = true
-    config.middleware.insert_before 0, 'Rack::Cors' do
+    config.middleware.insert_before "ActionDispatch::Static", 'Rack::Cors' do
       allow do
         origins 'https://blooming-cove-33951.herokuapp.com/'
-        resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options, :patch, :head]
+        resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options, :patch, :head], expose: :location
       end
     end
   end
