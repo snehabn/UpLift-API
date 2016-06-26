@@ -19,12 +19,13 @@ class EventsController < ApplicationController
 	end
 
 	def show
-		organization = Event.find_by(id: params[:id]).organization.name
-		
+		organization = Event.find_by(id: params[:id]).organization
 		event = Event.find_by(id: params[:id])
+		skills = Skill.where(skillable_id: params[:id], skillable_type: 'Event').map do |skill| skill end
 		render json: {
 			event: event,
-			organization: organization
+			organization: organization,
+			skills: skills
 		}
 	end
 
