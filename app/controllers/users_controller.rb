@@ -7,10 +7,10 @@ class UsersController < ApplicationController
 
 	def create
 		newuser = User.new(user_params)
-		if user.save
+		if newuser.save
 			render json: {user: newuser.to_json}
 		else
-			render json: {error: "Unable to create user"}
+			render json: {error: "Unable to create user."}
 		end
 	end
 
@@ -26,6 +26,6 @@ class UsersController < ApplicationController
 
 	private
 	def user_params
-		params.permit(:first_name, :last_name, :email, :password_digest, :zip, :image_url)
+		params.permit(:first_name, :last_name, :email, :password, :zip, :image_url)
 	end
 end
