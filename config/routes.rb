@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :causes
   resources :events_users
 
-   root 'users#index'
+  root 'users#index'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
