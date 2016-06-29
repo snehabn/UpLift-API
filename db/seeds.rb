@@ -117,10 +117,15 @@ Event.create(name: "Volunteer Photographer", start_date: "2016-07-05", end_date:
 Event.create(name: "Construction Crew Volunteer", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 9, street: "1 Capitol Ave.", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 40, lat: 37.711121, lng:  -122.459063)
 Event.create(name: "Fishing with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 10, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
 Event.create(name: "Lifting with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 10, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
-Event.create(name: "Lifting with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 10, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
-
-
-
+Event.create(name: "Hour of APIs with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 10, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
+Event.create(name: "CalFresh Outreach Volunteer", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 3, street: "900 Pennsylvania Ave", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 30, lat: 37.7731518004931, lng: -122.411163768557)
+Event.create(name: "Volunteer at the Food Bank!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 3, street: "900 Pennsylvania Ave", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 55, lat: 37.7731518004931, lng: -122.411163768557)
+Event.create(name: "Driver Opportunities: Deliver nutritious groceries to homebound seniors!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 5, street: "1375 Fairfax Ave", city: "San Francisco", state: "CA", zip: 94124, volunteers_needed: 55, lat: 37.7731518004931, lng: -122.411163768557)
+Event.create(name: "Community Engagement Intern", start_date: "2016-06-26", end_date: "2016-09-26", organization_id: 5, street: "1375 Fairfax Ave", city: "San Francisco", state: "CA", zip: 94124, volunteers_needed: 1, lat: 37.7731518004931, lng: -122.411163768557)
+Event.create(name: "Make a Difference in the lives of our local Seniors!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 5, street: "1375 Fairfax Ave", city: "San Francisco", state: "CA", zip: 94124, volunteers_needed: 55, lat: 37.7731518004931, lng: -122.411163768557)
+Event.create(name: "Have fun and impact a child's life! Sponsor a club with BHGH-SF!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 6, street: "175 Phelan Ave", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 15, lat: 37.7731518004931, lng: -122.411163768557)
+Event.create(name: "Hip Hop Dance Instructor!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 6, street: "175 Phelan Ave", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 15, lat: 37.7731518004931, lng: -122.411163768557)
+Event.create(name: "Google Code Corps Guru (Scratch)", start_date: "2016-06-21", end_date: "2016-08-31", organization_id: 6, street: "201 W. Orange Ave", city: "San Francisco", state: "CA", zip: 94080, volunteers_needed: 5, lat: 37.7731518004931, lng: -122.411163768557)
 
 User.create(first_name: 'Tim', last_name: 'Tim', email: "tim@tim.com", password: 'timtim', zip: '94107', image_url: 'http://devbootcamp.com/assets/img/locations/sf/hunter-chapman.jpg')
 User.create(first_name: 'Tom', last_name: 'Tom', email: "tom@tom.com", password: 'tomtom', zip: '94107', image_url: 'https://avatars2.githubusercontent.com/u/8047928?v=3&s=460')
@@ -134,24 +139,16 @@ Skill.create(name: 'programming', skillable_id: rand(1..2) , skillable_type: ['U
 Skill.create(name: 'business development', skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
 Skill.create(name: 'gardening',  skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
 Skill.create(name: 'teaching',  skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
+Skill.create(name: 'fishing',  skillable_id: 10, skillable_type: ['Event'].sample)
+Skill.create(name: 'dancing',  skillable_id: 18, skillable_type: ['Event'].sample)
+Skill.create(name: 'driving',  skillable_id: 14, skillable_type: ['Event'].sample)
+Skill.create(name: 'photography',  skillable_id: 9, skillable_type: ['Event'].sample)
+Skill.create(name: 'construction',  skillable_id: 9, skillable_type: ['Event'].sample)
+
+
 
 Cause.create(name: 'literacy',  causable_id: 2 , causable_type: ['Organization'].sample)
 Cause.create(name: 'youth',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
 Cause.create(name: 'poverty',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
 
 
-Event.create(name: "CalFresh Outreach Volunteer", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 3, street: "900 Pennsylvania Ave", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 30, lat: 37.7731518004931, lng: -122.411163768557)
-
-Event.create(name: "Volunteer at the Food Bank!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 3, street: "900 Pennsylvania Ave", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 55, lat: 37.7731518004931, lng: -122.411163768557)
-
-Event.create(name: "Driver Opportunities: Deliver nutritious groceries to homebound seniors!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 5, street: "1375 Fairfax Ave", city: "San Francisco", state: "CA", zip: 94124, volunteers_needed: 55, lat: 37.7731518004931, lng: -122.411163768557)
-
-Event.create(name: "Community Engagement Intern", start_date: "2016-06-26", end_date: "2016-09-26", organization_id: 5, street: "1375 Fairfax Ave", city: "San Francisco", state: "CA", zip: 94124, volunteers_needed: 1, lat: 37.7731518004931, lng: -122.411163768557)
-
-Event.create(name: "Make a Difference in the lives of our local Seniors!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 5, street: "1375 Fairfax Ave", city: "San Francisco", state: "CA", zip: 94124, volunteers_needed: 55, lat: 37.7731518004931, lng: -122.411163768557)
-
-Event.create(name: "Have fun and impact a child's life! Sponsor a club with BHGH-SF!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 6, street: "175 Phelan Ave", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 15, lat: 37.7731518004931, lng: -122.411163768557)
-
-Event.create(name: "Hip Hop Dance Instructor!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 6, street: "175 Phelan Ave", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 15, lat: 37.7731518004931, lng: -122.411163768557)
-
-Event.create(name: "Google Code Corps Guru (Scratch)", start_date: "2016-06-21", end_date: "2016-08-31", organization_id: 6, street: "201 W. Orange Ave", city: "San Francisco", state: "CA", zip: 94080, volunteers_needed: 5, lat: 37.7731518004931, lng: -122.411163768557)

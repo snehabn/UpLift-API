@@ -1,7 +1,7 @@
 class OrganizationsController < ApplicationController
 	def index
 		organizations = Organization.all
-		render json: organizations
+		render json: organizations, :include => :causes
 	end
 
 	def create
