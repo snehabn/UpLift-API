@@ -16,6 +16,14 @@ Organization.create(name: "American Red Cross", email: "contact@redcross.org", z
 
 Organization.create(name: "Youth Speaks", email: "info@youthspeaks.org", zip: 94103, mission_statement: "Youth Speaks places young people in control of their intellectual and artistic development. We are urgently driven by the belief that literacy is a need, not a want, and that literacy comes in various forms.", phone_number: "415-255-9035", website_url: "http://youthspeaks.org/", password: "12345", image_url: "http://youthspeaks.org/wp-content/uploads/2015/03/NewYouthSpeaksLogo-blk-org.png")
 
+Organization.create(name: "SF Marin Food Bank", email: "cjang@sfmfoodbank.org", zip: 94107, mission_statement: "Our mission is to end hunger in San Francisco and Marin.", phone_number: "(415) 282-1900 ext. 244", website_url: "http://www.sfmfoodbank.org/", password: "12345", image_url: "http://www.sfmfoodbank.org/sites/default/files/images/news/sfmfblogolg.jpg")
+
+Organization.create(name: "Homeless Prenatal Program", email: "info@homelessprenatal.org", zip: 94110, mission_statement: "n partnership with our families, break the cycle of childhood poverty.", phone_number: "415-546-6756, ext. 381", website_url: "http://www.homelessprenatal.org/", password: "12345", image_url: "http://www.homelessprenatal.org/content/uploads/HPP3colorlogo3.png")
+
+Organization.create(name: "Meals on Wheels", email: "info@mowsf.org", zip: 94124, mission_statement: "Meals On Wheels of San Francisco and its volunteers provide seniors what they need to live independent and dignified lives — nutritious meals, professional social work and a friendly visitor.", phone_number: "415-920-1111", website_url: "http://www.mowsf.org/", password: "12345", image_url: "http://www.mowsf.org/wp-content/uploads/2013/04/MOW_Logo_Large_horizontallayout-noback1.png")
+
+Organization.create(name: "Boys & Girls Clubs of San Francisco", email: "elooper@kidsclub.org", zip: 94110, mission_statement: "We inspire and enable all young people, especially those from disadvantaged circumstances, to realize their full potential as productive, responsible and caring citizens.", phone_number: "415-445-5482", website_url: "http://www.kidsclub.org/", password: "12345", image_url: "http://media1.fdncms.com/sfweekly/imager/fake-boys-and-girls-club-volunteers-scamming/u/original/3083437/partner-boysandgirlsclub.png")
+
 Event.create(name: "Blood Drive", start_date: "2016-07-15", end_date: "2016-07-18", organization_id: 1, street: "140 Gregory Ln #120", city: "Pleasant Hill", state: "CA", zip: 94523, volunteers_needed: 50, lat: 37.9541327800932, lng: -122.076140163367
 )
 
