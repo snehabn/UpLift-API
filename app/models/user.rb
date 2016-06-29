@@ -1,6 +1,12 @@
 class User < ActiveRecord::Base
+  # Include default devise modules.
+  devise :database_authenticatable, :registerable,
+          :recoverable, :rememberable, :trackable, :validatable,
+          :confirmable, :omniauthable
+  include DeviseTokenAuth::Concerns::User
 
-	has_secure_password
+  
+	# has_secure_password
 
 	has_many :skills, :as => :skillable
 	has_many :causes, :as => :causable
@@ -14,7 +20,6 @@ class User < ActiveRecord::Base
 	uniqueness: { case_sensitive: false }
 	
 	validates :zip, numericality: { only_integer: true }
-
 	# def password
 	# 	@password ||= Password.new(password_digest)
 	# end

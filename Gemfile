@@ -12,8 +12,17 @@ gem 'pg'
 
 gem 'rack-cors', :require => 'rack/cors'
 
+gem 'devise_token_auth'
+gem 'omniauth', '~> 1.3', '>= 1.3.1'
+
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
+
 # To use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+# gem 'bcrypt', '~> 3.1.7'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
