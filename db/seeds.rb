@@ -38,3 +38,98 @@ Cause.create(name: 'literacy',  causable_id: 2 , causable_type: ['Organization']
 Cause.create(name: 'youth',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
 Cause.create(name: 'poverty',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Event.create(name: "Park Champions Program", start_date: "2016-07-01", end_date: "Ongoing", organization_id: 7, street: "50 Francisco Street", city: "San Francisco", state: "CA", zip: 94133, volunteers_needed: 500, lat: 37.806357, lng: -122.406076)
+Event.create(name: "Park Champions Program at Candlestick Point State Recreation Area", start_date: "2016-07-01", end_date: "Ongoing", organization_id: 7, street: "1150 Carroll Avenue", city: "San Francisco", state: "CA", zip: 94124, volunteers_needed: 500, lat: 37.720865, lng: -122.385062)
+Event.create(name: "Kids Now Program - Second Harvest Food Bank", start_date: "2016-07-05", end_date: "Ongoing", organization_id: 8, street: "1720 El Camino Real, Suite 10", city: "Burlingame", state: "CA", zip: 94010, volunteers_needed: 500, lat: 37.593731, lng: -122.381107)
+Event.create(name: "Summer Office", start_date: "2016-08-01", end_date: "2016-09-30", organization_id: 9, street: "500 Washington St. Suite 250", city: "San Francisco", state: "CA", zip: 94111, volunteers_needed: 3, lat: 37.796210, lng: -122.402130)
+Event.create(name: "Volunteer Photographer", start_date: "2016-07-05", end_date: "2016-07-12", organization_id: 9, street: "1 Capitol Ave.", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 1, lat: 37.711121, lng:  -122.459063)
+Event.create(name: "Construction Crew Volunteer", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 9, street: "1 Capitol Ave.", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 40, lat: 37.711121, lng:  -122.459063)
+Event.create(name: "Fishing with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 10, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
+Event.create(name: "Lifting with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 10, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
+Event.create(name: "Lifting with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 10, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
+
+
+
+
+
+
+
