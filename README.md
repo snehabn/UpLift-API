@@ -1,29 +1,27 @@
-# UpLift 
+# UpLift
 ##### Bridging Community and People Meaningfully
-### Team:
+
+[![Travis](https://img.shields.io/travis/nosir/cleave.js.svg?maxAge=2592000)](https://travis-ci.org/nosir/cleave.js)
+
+# Uplift-API
+
+# Table of Contents
+* [Why](#why)
+* [Team Members](#team-members)
+* [Live Project Demo](#project-demo)
+* [Instructions](#instructions)
+* [Features](#features)
+* [Resources Used](#resources)
+
+
+#### Team Members:
 * Umar Farooq Bajwa
 * Sneha Narasimhan
 * Jonathan Nicolas
 * Shin Wang
 
-## Goals:
-## User Stories:
-#### MVP
+#### <a name="project-demo"></a> Live Project Demo
 
-##### As a user I can:
-* View all volunteerings without logging in.
- * Register so I can manage my volunteerings.
- * View my volunteerings on my profile page so that I have easy access and everything in one place.
- * Get directions/map the location for the volunteering.
- * Search by location so that I can see whats near me.
- * Search by interests/skills so I can find the relevant volunteerings.
- * View facts such as estimated time, total duration, testimonies, benefits, contact info, etc of the volunteering so I can validate.
- * View testimonies/saving money/etc from the organizations.
- * View other Users who are joining/participating the event.
- * Contact organizations so that I can inquire further.
- * Invite my friends to join me.
-  
-##### As an Organization I can: 
-* Have my own profile page listing volunteerings, members, followers, copy, etc.
-### Technology Stack
-### Iterations and Future Plans
+[Uplift API](http://uplift-api.herokuapp.com/)
+
+#### <a name="instructions"></a> Instructions
