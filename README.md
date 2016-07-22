@@ -33,3 +33,20 @@ We are facilitating the search for volunteering opportunities via better UX and 
 [Uplift API](http://uplift-api.herokuapp.com/)
 
 #### <a name="instructions"></a> Instructions
+
+Uplift-API: Available API Endpoints
+
+/causes
+/events
+/organizations
+/skills
+
+Each endpoint is a get or post request. Each one returns a JSON. 
+
+Example response for Causes:
+
+Example response for Events:
+
+Example response for Organizations:
+
+Example response for Skills:
