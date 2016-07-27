@@ -112,14 +112,7 @@ Organization.create(name: "Second Harvest Food Bank, Santa Cruz County",
                     image_url: "http://www.donateacar.com/images/SecondHarvestFoodBank.png")
 
 # 11
-Organization.create(name: "Brian Chung's Center for Kids Who Can't Code  Good and Wanna Learn To Implement Other API's Too",
-                    email: "brianjaychung@gmail.com",
-                    zip: 95076,
-                    mission_statement: "We teach you that there's more to life than being really, really ridiculously good at basketball.",
-                    phone_number: "916-390-8778",
-                    website_url: "https://www.linkedin.com/in/brianjaychung",
-                    password: "12345",
-                    image_url: "https://avatars2.githubusercontent.com/u/17419302?v=3&s=400")
+
 
 Event.create(name: "Blood Drive", start_date: "2016-07-15", end_date: "2016-07-18", organization_id: 1, street: "140 Gregory Ln #120", city: "Pleasant Hill", state: "CA", zip: 94523, volunteers_needed: 50, lat: 37.9541327800932, lng: -122.076140163367)
 Event.create(name: "Youth Poetry Slam", start_date: "2016-07-12", end_date: "2016-07-16", organization_id: 2, street: "1663 Mission St.", city: "San Francisco", state: "CA", zip: 94103, volunteers_needed: 200, lat: 37.7731518004931, lng: -122.411163768557)
@@ -129,9 +122,6 @@ Event.create(name: "Kids Now Program - Second Harvest Food Bank", start_date: "2
 Event.create(name: "Summer Office", start_date: "2016-08-01", end_date: "2016-09-30", organization_id: 9, street: "500 Washington St. Suite 250", city: "San Francisco", state: "CA", zip: 94111, volunteers_needed: 3, lat: 37.796210, lng: -122.402130)
 Event.create(name: "Volunteer Photographer", start_date: "2016-07-05", end_date: "2016-07-12", organization_id: 8, street: "1 Capitol Ave.", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 1, lat: 37.711121, lng:  -122.459063)
 Event.create(name: "Construction Crew Volunteer", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 8, street: "1 Capitol Ave.", city: "San Francisco", state: "CA", zip: 94112, volunteers_needed: 40, lat: 37.711121, lng:  -122.459063)
-Event.create(name: "Fishing with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 11, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
-Event.create(name: "Lifting with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 11, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
-Event.create(name: "Hour of APIs with Brian", start_date: "2016-07-05", end_date: "2016-09-30", organization_id: 11, street: "633 Folsom", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 100, lat: 37.784823, lng:  -122.397204)
 Event.create(name: "CalFresh Outreach Volunteer", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 3, street: "900 Pennsylvania Ave", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 30, lat: 37.7731518004931, lng: -122.411163768557)
 Event.create(name: "Volunteer at the Food Bank!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 3, street: "900 Pennsylvania Ave", city: "San Francisco", state: "CA", zip: 94107, volunteers_needed: 55, lat: 37.7731518004931, lng: -122.411163768557)
 Event.create(name: "Driver Opportunities: Deliver nutritious groceries to homebound seniors!", start_date: "2016-06-26", end_date: "Ongoing", organization_id: 5, street: "1375 Fairfax Ave", city: "San Francisco", state: "CA", zip: 94124, volunteers_needed: 55, lat: 37.7731518004931, lng: -122.411163768557)
@@ -149,23 +139,24 @@ EventsUser.create(user_id: 1, event_id: 2)
 EventsUser.create(user_id: 2, event_id: 1)
 EventsUser.create(user_id: 2, event_id: 2)
 
-Skill.create(name: 'programming', skillable_id: 11, skillable_type: ['Event'].sample)
-Skill.create(name: 'programming', skillable_id: 1, skillable_type: ['User'].sample)
-Skill.create(name: 'programming', skillable_id: 2, skillable_type: ['User'].sample)
-Skill.create(name: 'business development', skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
-Skill.create(name: 'gardening',  skillable_id: 8, skillable_type: ['Event'].sample)
-Skill.create(name: 'teaching',  skillable_id: 6, skillable_type: ['Event'].sample)
-Skill.create(name: 'teaching',  skillable_id: 2, skillable_type: ['User'].sample)
-Skill.create(name: 'fishing',  skillable_id: 10, skillable_type: ['Event'].sample)
-Skill.create(name: 'dancing',  skillable_id: 18, skillable_type: ['Event'].sample)
-Skill.create(name: 'driving',  skillable_id: 14, skillable_type: ['Event'].sample)
-Skill.create(name: 'photography',  skillable_id: 7, skillable_type: ['Event'].sample)
-Skill.create(name: 'construction',  skillable_id: 8, skillable_type: ['Event'].sample)
+Skill.create(name: 'Programming', skillable_id: 6, skillable_type: ['Event'].sample)
+Skill.create(name: 'Programming', skillable_id: 1, skillable_type: ['User'].sample)
+Skill.create(name: 'Programming', skillable_id: 2, skillable_type: ['User'].sample)
+Skill.create(name: 'Business Development', skillable_id: rand(1..2) , skillable_type: ['User', 'Event'].sample)
+Skill.create(name: 'Gardening',  skillable_id: 8, skillable_type: ['Event'].sample)
+Skill.create(name: 'Teaching',  skillable_id: 6, skillable_type: ['Event'].sample)
+Skill.create(name: 'Teaching',  skillable_id: 2, skillable_type: ['User'].sample)
+# Skill.create(name: 'fishing',  skillable_id: 10, skillable_type: ['Event'].sample)
+Skill.create(name: 'Teaching',  skillable_id: 15, skillable_type: ['Event'].sample)
+Skill.create(name: 'Dancing',  skillable_id: 15, skillable_type: ['Event'].sample)
+Skill.create(name: 'Driving',  skillable_id: 11, skillable_type: ['Event'].sample)
+Skill.create(name: 'Photography',  skillable_id: 7, skillable_type: ['Event'].sample)
+Skill.create(name: 'Construction',  skillable_id: 8, skillable_type: ['Event'].sample)
 
 
 
-Cause.create(name: 'literacy',  causable_id: 2 , causable_type: ['Organization'].sample)
-Cause.create(name: 'youth',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
-Cause.create(name: 'poverty',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
+Cause.create(name: 'Literacy',  causable_id: 2 , causable_type: ['Organization'].sample)
+Cause.create(name: 'Youth',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
+Cause.create(name: 'Poverty',  causable_id: rand(1..2), causable_type: ['Organization'].sample)
 
 
